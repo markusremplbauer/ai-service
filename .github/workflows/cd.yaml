@@ -1,4 +1,4 @@
-name: CD frontend
+name: CD
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
     name: Build ai-service
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: ai-service
+      IMAGE_NAME: api
       FOLDER: ai-service
     defaults:
       run:
